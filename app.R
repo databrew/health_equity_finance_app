@@ -26,15 +26,8 @@ body <- dashboardBody(
     ),
     tabItems(
         tabItem(
-            tabName="main",
-            fluidPage(
-                fluidRow(
-                    a(href="http://databrew.cc",
-                      target="_blank", uiOutput("box1")),
-                    a(href="http://databrew.cc",
-                      target="_blank", uiOutput("box2"))
-                )
-            )
+            tabName="main"
+            
         ),
         tabItem(
             tabName="charts",
