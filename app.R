@@ -10,6 +10,10 @@ sidebar <- dashboardSidebar(
             tabName="main",
             icon=icon("eye")),
         menuItem(
+            text="Charts",
+            tabName="charts",
+            icon=icon("eye")),
+        menuItem(
             text = 'About',
             tabName = 'about',
             icon = icon("cog", lib = "glyphicon"))
@@ -32,6 +36,40 @@ body <- dashboardBody(
                 )
             )
         ),
+        tabItem(
+            tabName="charts",
+            tabsetPanel(
+                id = 'tabs',
+                tabPanel(
+                    title = 'Most recent value - Population mean',
+                    value = 'value_mean'),
+                tabPanel(
+                    title = 'Trends - Population mean',
+                    value = 'trends_mean'),
+                tabPanel(
+                    title = 'Quintile trends',
+                    value = 'quintile_trends'),
+                tabPanel(
+                    title = 'Quintile dotplot for countries',
+                    value = 'quintile_doptplot'),
+                tabPanel(
+                    title = 'Quintile dotplot for indicators',
+                    value = 'quintile_indicators'),
+                tabPanel(
+                    title = 'Most recent value - concentration index',
+                    value = 'value_concentration'),
+                tabPanel(
+                    title = 'Trends - concentration index',
+                    value = 'trends_concentration'),
+                tabPanel(
+                    title = 'Data availibility per indicator',
+                    value = 'data_per_indicator'),
+                tabPanel(
+                    title = 'Data availibility per country',
+                    value = 'data_per_country')
+                
+                )),
+            
         tabItem(
             tabName = 'about',
             fluidPage(
