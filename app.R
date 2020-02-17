@@ -2,21 +2,19 @@ library(shiny)
 library(shinydashboard)
 source('global.R')
 
-header <- dashboardHeader(title="Databrew app")
+header <- dashboardHeader(title = tags$a(href='',
+                                         tags$img(src='imf_logo.png', height='50px', alt = 'IMF DataMapper')))
 sidebar <- dashboardSidebar(
     sidebarMenu(
         menuItem(
             text="Main",
-            tabName="main",
-            icon=icon("eye")),
+            tabName="main"),
         menuItem(
             text="Charts",
-            tabName="charts",
-            icon=icon("eye")),
+            tabName="charts"),
         menuItem(
             text = 'About',
-            tabName = 'about',
-            icon = icon("cog", lib = "glyphicon"))
+            tabName = 'about')
     )
 )
 
@@ -26,7 +24,12 @@ body <- dashboardBody(
     ),
     tabItems(
         tabItem(
-            tabName="main"
+            tabName="main",
+            fluidPage(
+              fluidRow(
+                h2('IMF DataMapper')
+              )
+            )
             
         ),
         tabItem(
@@ -67,7 +70,7 @@ body <- dashboardBody(
             tabName = 'about',
             fluidPage(
                 fluidRow(
-                    div(img(src='logo_clear.png', align = "center"), style="text-align: center;"),
+                    div(img(src='logo.png', align = "center"), style="text-align: center;"),
                     h4('Built in partnership with ',
                        a(href = 'http://databrew.cc',
                          target='_blank', 'Databrew'),
