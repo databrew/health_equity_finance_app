@@ -1,6 +1,6 @@
 library(shiny)
 library(shinydashboard)
-
+source('global.R')
 
 header <- dashboardHeader(title="Databrew app")
 sidebar <- dashboardSidebar(
