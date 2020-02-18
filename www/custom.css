@@ -194,6 +194,10 @@ a:active,a:focus,a:hover {
     font-weight: 400;
     overflow: visible;
 }
+
+.main-header .logo img {
+    height: 50px;
+}
 .main-header .logo .logo-lg {
     display: block}
 .main-header .logo .logo-mini {
@@ -265,14 +269,27 @@ a:active,a:focus,a:hover {
     }
 .main-header .logo,.main-header .navbar {
     width: 100%;
-    height: 80px;
+    height: 50px;
     float: none;
     }
 .main-header .navbar {
-    margin: 0}
+    margin: 0} 
+    
 .main-header .navbar-custom-menu {
     float: right}
+.main-header .logo img {
+    margin: 5px;
+    height: 40px;
+    position: fixed}
+.main-header .sidebar-toggle {
+    color: #fff;
+    float: left;
+    position: fixed;
+    padding: 10px 15px}     
+    
 }
+
+
 @media (max-width: 991px) {
     .navbar-collapse.pull-left {
     float: none!important}

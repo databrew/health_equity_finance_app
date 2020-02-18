@@ -3,7 +3,7 @@ library(shinydashboard)
 source('global.R')
 
 header <- dashboardHeader(title = tags$a(href='',
-                                         tags$img(src='imf_logo.png', height='50px', alt = 'IMF DataMapper')))
+                                         tags$img(src='imf_logo.png', alt = 'IMF DataMapper')))
 sidebar <- dashboardSidebar(
     sidebarMenu(
         menuItem(
