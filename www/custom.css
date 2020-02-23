@@ -237,7 +237,7 @@ a:active,a:focus,a:hover {
 @media (max-width: 991px) {
     .content-header>.breadcrumb {
     position: relative;
-    margin-top: 5px;
+    margin-top: 10px;
     top: 0;
     right: 0;
     float: none;
@@ -370,6 +370,8 @@ a:active,a:focus,a:hover {
     font-size: 11px}
 .user-panel>.info>a>.fa,.user-panel>.info>a>.glyphicon,.user-panel>.info>a>.ion {
     margin-right: 3px}
+
+/* Sidebar */
 .sidebar-menu {
     font-size: 16px;
     font-family: 'MuseoSans-300', 'Helvetica', sans-serif;
@@ -381,6 +383,10 @@ a:active,a:focus,a:hover {
     position: relative;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid #fff;
+}
+.sidebar-menu>li:hover {
+    margin-left: 5px;
 }
 .sidebar-menu>li>a {
     padding: 12px 5px 12px 15px;
@@ -3082,7 +3088,7 @@ table.text-center,table.text-center td,table.text-center th {
 /* background */
 /* body */
 .content-wrapper, .right-side {
-background-color: #FFFFFF;
+background-color: #fff;
 }
 
 .circle {
@@ -3108,4 +3114,17 @@ background-color: #FFFFFF;
   line-height: 25px;
   text-align: center;
   background: #FFFFFF;
+}
+
+/* Slider */
+.irs-bar {
+    background: yellow;
+    border-top: green;
+}
+.irs-bar-edge {
+    background-color: red;
+    border: 2px solid blue;
+}
+.irs-single {
+    background-color: aquamarine;
 }
